@@ -6,7 +6,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 const questions = [
     {
         type: 'input',
-        name: 'name',
+        name: 'title',
         message: 'Enter the title of your project. (Required)',
         validate: readMeTitle => {
             if (readMeTitle) {
@@ -59,10 +59,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+}
 
 // Function call to initialize app
 init();
