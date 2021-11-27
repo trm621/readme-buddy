@@ -5,6 +5,12 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 const readMeText = generateMarkdown(title, readMeData);
 
+fs.writeFile('README.md', readMeText, err => {
+    if (err) throw err;
+
+    console.log('README complete! Check out README.md to see the output!')
+})
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -62,16 +68,7 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-const writeToFile = (title, readMeData) => {
-    return `
-    # ${title}
-    ## ${description}
-    ## ${languages}
-    ## ${link}
-    ## ${preview-link}
-    ## ${authors}
-    `
-};
+function writeToFile();
 
 // TODO: Create a function to initialize app
 function init() {
