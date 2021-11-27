@@ -1,15 +1,15 @@
-// TODO: Include packages needed for this application
+// // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+// const fs = require('fs');
+// const generateMarkdown = require('./utils/generateMarkdown.js');
 
-const readMeText = generateMarkdown(title, readMeData);
+// const readMeText = generateMarkdown(title, readMeData);
 
-fs.writeFile('README.md', readMeText, err => {
-    if (err) throw err;
+// fs.writeFile('README.md', readMeText, err => {
+//     if (err) throw err;
 
-    console.log('README complete! Check out README.md to see the output!')
-})
+//     console.log('README complete! Check out README.md to see the output!')
+// });
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -26,12 +26,6 @@ const questions = [
         }
     },
     {
-        type: 'checkbox',
-        name: 'languages',
-        message: 'What languages did you use to build this project? (Check all that apply)',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
-    },
-    {
         type: 'input',
         name: 'description',
         message: 'Enter a description for you project. (Required)',
@@ -45,13 +39,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'link',
-        message: 'Please provide a link to the deployed website.',
+        name: 'installation-instructions',
+        message: 'Please provide information on how to install your program.',
     },
     {
         type: 'input',
-        name: 'preview-link',
-        message: 'Please provide a link to a preview screenshot of your project.',
+        name: 'usage-info',
+        message: 'Please provide information on how to use your program.',
         validate: previewLink => {
             if (previewLink) {
                 return true;
@@ -64,16 +58,21 @@ const questions = [
         type: 'input',
         name: 'authors',
         message: 'Please credit each person(s) that worked on this project.'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Please choose a license for your project from the list of options below.',
+        choices: []
     }
 ];
 
-// TODO: Create a function to write README file
-function writeToFile();
+// // TODO: Create a function to write README file
+// function writeToFile();
 
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-    .then(readMeData)
 };
 
 // Function call to initialize app
