@@ -59,13 +59,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+const writeToFile = (title, data) => {
+    return `
+    # ${title}
+    ## ${description}
+    ## ${languages}
+    ## ${link}
+    ## ${preview-link}
+    ## ${authors}
+    `
 };
 
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-}
+    .then(readMeData)
+};
 
 // Function call to initialize app
 init();
