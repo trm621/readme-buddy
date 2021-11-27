@@ -46,13 +46,6 @@ const questions = [
         type: 'input',
         name: 'usage-info',
         message: 'Please provide information on how to use your program.',
-        validate: previewLink => {
-            if (previewLink) {
-                return true;
-            } else {
-                console.log('Please provide a link to a preview screenshot of the project!');
-            }
-        }
     },
     {
         type: 'input',

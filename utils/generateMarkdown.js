@@ -16,19 +16,19 @@ function generateMarkdown(data) {
   ## Description
   ### ${data.description}
   ## Table of Contents
-  ### ${data.tableOfContents}
+  ### ${data.tableofcontents}
   ## Installation
-  ### ${data.languages}
+  ### ${data.installation-instructions}
   ## Usage
-  ### ${data.link}
+  ### ${data.usage-info}
   ## License
   ### ${data.license}
   ## Contributing
-  ### ${data.preview-link}
-  ## Tests
   ### ${data.authors}
+  ## Tests
+  ### ${data.tests}
   ## Questions
-  ### ${data.reachOutInfo}
+  ### ${data.reach-out-info}
 `;
 }
 
