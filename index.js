@@ -1,9 +1,7 @@
 // // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-// const generateMarkdown = require('./utils/generateMarkdown');
-const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const generatePage = require('./utils/generate-page.js');
+const writeToFile = require('./utils/generate-page.js');
 
 // TODO: Create a function to initialize app
 const init = projectData => {
@@ -69,7 +67,7 @@ init()
     .then(readMeInfo => {
         return generateMarkdown(readMeInfo);
     })
-    .then(readMeInfo => {
-        return writeToFile(readMeInfo);
-    })
+    .then(readMeText => {
+        return writeToFile(readMeText);
+    });
   
