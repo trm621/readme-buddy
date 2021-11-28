@@ -47,6 +47,16 @@ const init = projectData => {
             type: 'input',
             name: 'authors',
             message: 'Please credit each person(s) that worked on this project.'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: "Please provide a link to the program in test."
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your GitHub user name.'
         }
         // {
         //     type: 'list',
