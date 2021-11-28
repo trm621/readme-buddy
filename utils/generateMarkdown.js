@@ -33,7 +33,7 @@ const generateMarkdown = readMeInfo => {
   ## Tests
   ### ${readMeInfo.tests}
   ## Questions
-  ### <a href="github.com/${readMeInfo.github}">${readMeInfo.github}</a>
+  ### <a href="https://www.github.com/${readMeInfo.github}">${readMeInfo.github}</a>
 `;
 }
 

@@ -12,9 +12,9 @@ const writeToFile = fileContent => {
             resolve({
                 ok: true,
                 message: 'Check the ./dist folder for your README!'
-            })
-        })
-    })
+            });
+        });
+    });
 };
 
 module.exports = writeToFile;
