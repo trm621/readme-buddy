@@ -1,6 +1,6 @@
-# README Generator
+# Professional ReadMe Generator
   ## Description
-  ### A command line application for generating a professional README.md file.
+  ### A command line application.
   ## Table of Contents
   1. <a href="#installation">Installation</a>
   2. <a href="#usage">Usage</a>
@@ -9,14 +9,14 @@
   5. <a href="#tests">Tests</a>
   6. <a href="#questions">Questions</a>
   ## Installation
-  ### Clone the application onto your local machine and run it through the command line.
+  ### Install on your local machine.
   ## Usage
-  ### The user is presented with a series of questions. The information the user provides will be placed inside a README.md file and written into the "dist" folder.
+  ### Run through the command line.
   ## License
   ### undefined
   ## Contributing
   ### Thomas Maher
   ## Tests
-  ### 
+  ### ""
   ## Questions
   ### <a href="https://www.github.com/trm621">trm621</a>
