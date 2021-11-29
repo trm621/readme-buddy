@@ -9,7 +9,7 @@
   5. <a href="#tests">Tests</a>
   6. <a href="#questions">Questions</a>
   ## Installation
-  ### Clone the application onto your local machine and run it through the command line.
+  ### Clone the application onto your local machine and run it through the command line. Make sure to download the 'Inquire' package once you've successfully accessed the application.
   ## Usage
   ### The user is presented with a series of questions. The information the user provides will be placed inside a README file and written into the "dist" folder.
   ## Contributing

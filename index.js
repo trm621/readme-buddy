@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const writeToFile = require('./utils/generate-page.js');
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app and create questions
 const init = projectData => {
     if (!projectData) {
         projectData = [];
