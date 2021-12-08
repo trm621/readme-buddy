@@ -1,6 +1,6 @@
 // // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const markdownFunctions = require('./utils/generateMarkdown.js');
 const writeToFile = require('./utils/generate-page.js');
 
 // TODO: Create a function to initialize app and create questions
@@ -57,13 +57,13 @@ const init = projectData => {
             type: 'input',
             name: 'github',
             message: 'Please enter your GitHub user name.'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Please choose a license for your project from the list of options below.',
+            choices: ['BSD', 'MIT', 'GPL']
         }
-        // {
-        //     type: 'list',
-        //     name: 'license',
-        //     message: 'Please choose a license for your project from the list of options below.',
-        //     choices: []
-        // }
     ])
     .then(readMeInfo => {
         projectData.push(readMeInfo) 
@@ -75,7 +75,7 @@ const init = projectData => {
 // Function call to initialize app
 init()
     .then(readMeInfo => {
-        return generateMarkdown(readMeInfo);
+        return markdownFunctions.generateMarkdown(readMeInfo);
     })
     .then(readMeText => {
         return writeToFile(readMeText),

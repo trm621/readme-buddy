@@ -1,6 +1,8 @@
-# Professional ReadMe Generator
+# Professional README Generator
   ## Description
-  ### A command line application.
+  ### A simple command line app to create a professional README.
+  ### Badge
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
   1. <a href="#installation">Installation</a>
   2. <a href="#usage">Usage</a>
@@ -9,14 +11,14 @@
   5. <a href="#tests">Tests</a>
   6. <a href="#questions">Questions</a>
   ## Installation
-  ### Install on your local machine.
+  ### Download the code to your local machine and run through node.
   ## Usage
-  ### Run through the command line.
+  ### Answer the prompts and the information will be put into a README file.
   ## License
-  ### undefined
+  ### MIT
   ## Contributing
   ### Thomas Maher
   ## Tests
-  ### ""
+  ### Blank
   ## Questions
   ### <a href="https://www.github.com/trm621">trm621</a>
