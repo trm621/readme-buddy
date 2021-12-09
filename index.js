@@ -59,10 +59,17 @@ const init = projectData => {
             message: 'Please enter your GitHub user name.'
         },
         {
+            type: 'confirm',
+            name: 'confirmLicense',
+            message: 'Would you like to include a license with your README?',
+            default: true
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for your project from the list of options below.',
-            choices: ['BSD', 'MIT', 'GPL']
+            choices: ['BSD', 'MIT', 'GPL'],
+            when:  ({ confirmLicense }) => confirmLicense
         }
     ])
     .then(readMeInfo => {
