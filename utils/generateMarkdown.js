@@ -23,15 +23,15 @@ function renderLicenseLink (license) {
   }
   if (license === 'MIT') {
     return `## License
-    ### https://opensource.org/licenses/MIT`
+    ### <a href="https://opensource.org/licenses/MIT">MIT</a>`
 }
   else if (license === 'BSD') {
     return `## License
-    ### https://opensource.org/licenses/BSD-3-Clause`
+    ### <a href="https://opensource.org/licenses/BSD-3-Clause">BSD</a>`
   }
   else if (license === 'GPL') {
     return ` ## License
-    ### https://www.gnu.org/licenses/gpl-3.0`
+    ### <a href="https://www.gnu.org/licenses/gpl-3.0">GPL</a>`
   }
 }
 // TODO: Create a function that returns the license section of README
@@ -63,6 +63,7 @@ const generateMarkdown = readMeInfo => {
   ### ${readMeInfo.usageInfo}
   ## Contributing
   ### ${readMeInfo.authors}
+  ${renderLicenseLink(readMeInfo.license)}
   ## Tests
   ### ${readMeInfo.tests}
   ## Questions
