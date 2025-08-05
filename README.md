@@ -14,7 +14,5 @@
   ### The user is presented with a series of questions. The information the user provides will be placed inside a README file and written into the "dist" folder.
   ## Contributing
   ### Thomas Maher
-  ## Tests
-  ### https://drive.google.com/file/d/16rbgJeUkvjxtn3FyfM9znjDt2WeErmDd/view?usp=sharing
   ## Questions
   ### <a href="https://www.github.com/trm621">trm621</a>
