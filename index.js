@@ -1,9 +1,7 @@
-// // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const markdownFunctions = require('./utils/generateMarkdown.js');
 const writeToFile = require('./utils/generate-page.js');
 
-// TODO: Create a function to initialize app and create questions
 const init = projectData => {
     if (!projectData) {
         projectData = [];
@@ -79,7 +77,6 @@ const init = projectData => {
     })
 };
 
-// Function call to initialize app
 init()
     .then(readMeInfo => {
         return markdownFunctions.generateMarkdown(readMeInfo);
