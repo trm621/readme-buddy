@@ -85,7 +85,9 @@ init()
         return markdownFunctions.generateMarkdown(readMeInfo);
     })
     .then(readMeText => {
-        return writeToFile(readMeText),
+        return writeToFile(readMeText);
+    })
+    .then(() => {
         console.log("Check the ./dist folder in the root directory for your README!");
     })
     .catch(err => {
